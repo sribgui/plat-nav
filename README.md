@@ -1,1 +1,0 @@
-# growpedia
