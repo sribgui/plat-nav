@@ -2,7 +2,7 @@ no terminal::
 
 git init 
 git add . 
-git commit -m "commit 002"
+git commit -m "sribgui - revisão"
 git branch -M main 
 git remote add origin (junto com o link do repositório) 
 git push -u origin main 

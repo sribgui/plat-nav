@@ -5,8 +5,6 @@
 
 import exemplo1 from "./data-content/exemplo-1.js";
 
-
-
 const growpediaData = [
     exemplo1
 ];

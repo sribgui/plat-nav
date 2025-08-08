@@ -1,4 +1,4 @@
-import exemplo11 from '.exemplo1/exemplo-1-1.js'
+import exemplo11 from './exemplo-1/exemplo-1-1.js'
 
 const exemplo1 = {
     id: 'exemplo-1',
@@ -9,4 +9,4 @@ const exemplo1 = {
     ]
 }
 
-export default exemplo1
+export default exemplo1;
