@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Define o tipo de documento como HTML5, a versão mais moderna do HTML. -->
 <!DOCTYPE html>
 <!-- O elemento raiz da página, com o idioma definido como português do Brasil. -->
@@ -90,4 +91,98 @@
 
     
 </body>
+=======
+<!-- Define o tipo de documento como HTML5, a versão mais moderna do HTML. -->
+<!DOCTYPE html>
+<!-- O elemento raiz da página, com o idioma definido como português do Brasil. -->
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8, que suporta acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+    <!-- Define a "viewport" para garantir que a página seja renderizada corretamente em dispositivos móveis (design responsivo). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O título que aparece na aba do navegador. -->
+    <title>Grow-pedia Pessoal</title>
+    <!-- Link para a folha de estilos (CSS) que define a aparência da página. -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- TELA DE LOGIN -->
+    <div id="login-container" class="hidden">
+        <div class="card" id="login-card">
+            <h1>Grow-pedia Pessoal</h1>
+            <p class="intro-text">Por favor, faça o login para acessar o conteúdo.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" required value="admin">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required value="123">
+                </div>
+                <button type="submit" id="login-btn">Entrar</button>
+                <p id="login-error" class="hidden"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- A barra lateral de navegação. 'aside' é uma tag semântica para conteúdo relacionado, mas separado do principal. -->
+    <!-- 'role="navigation"' e 'aria-label' são para acessibilidade, ajudando leitores de tela a entender que isso é um menu. -->
+    <aside class="sidebar" role="navigation" aria-label="Menu Principal">
+        <!-- O título principal da barra lateral. -->
+        <h1>Grow-pedia</h1>
+        <!-- Uma lista não ordenada (ul) que servirá como contêiner para o nosso menu dinâmico. O JavaScript irá preenchê-la. -->
+        <ul id="nav-menu"></ul>
+    </aside>
+    
+
+    <!-- O contêiner para o conteúdo principal da página. 'main' é uma tag semântica. -->
+    <main class="main-content">
+        <!-- Um contêiner para as opções de visualização (tema, largura). -->
+        <div class="view-options">
+            <!-- O botão para abrir/fechar o menu de opções. Os atributos 'aria-*' melhoram a acessibilidade. -->
+            <!-- 'aria-haspopup' indica que o botão abre um menu. 'aria-expanded' informa se o menu está aberto ou fechado. -->
+            <button id="options-toggle-btn" class="options-btn" aria-label="Abrir opções de visualização" aria-haspopup="true" aria-expanded="false">⚙️CONFIG</button>
+            <!-- O menu dropdown de opções, que começa escondido. -->
+            <!-- 'role="dialog"' e 'aria-hidden="true"' informam aos leitores de tela que este é um diálogo e está oculto. -->
+            <div id="options-dropdown" class="options-dropdown" role="dialog" aria-hidden="true">
+                <div>
+                    <!-- Rótulo para o controle deslizante de largura, associado pelo 'for'. -->
+                    <label for="width-slider">Largura da Leitura</label>
+                    <!-- O controle deslizante (range input) para ajustar a largura do conteúdo. -->
+                    <input type="range" id="width-slider" min="600" max="1200" value="800">
+                </div>
+                
+                <!-- O botão para alternar entre os temas claro e escuro. -->
+                <button id="theme-toggle-btn">
+                    Alternar Tema
+                </button>
+                <!-- NOVO BOTÃO DE LOGOUT -->
+                <button id="logout-btn" class="hidden">
+                    Sair
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Um "invólucro" para o conteúdo principal, cuja largura pode ser ajustada pelo slider. -->
+        <div id="content-wrapper">
+            <!-- A área específica onde o conteúdo dos arquivos .html será carregado pelo JavaScript. -->
+            <!-- 'role="document"' indica que esta área contém o conteúdo principal do documento. -->
+            <div id="content-area" role="document">
+                <!-- O conteúdo será carregado aqui -->
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- Link para o arquivo JavaScript principal. -->
+    <!-- 'type="module"' permite usar as funcionalidades modernas de 'import' e 'export' do JavaScript. -->
+    <!-- O script é colocado no final do 'body' para garantir que todo o HTML seja carregado antes que o JS tente manipulá-lo. -->
+    <script type="module" src="js/aplicativo.js"></script>
+
+    
+</body>
+>>>>>>> 4b62a9d849a63b87e88faff45831c6c56650a0e9
 </html>
