@@ -1,4 +1,4 @@
-no terminal:
+no terminal::
 
 git init 
 git add . 
